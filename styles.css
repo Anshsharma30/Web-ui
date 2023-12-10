@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* You can link to the Inter font or use a different font */
+    background-color: #000;
+}
+
+
+
+header {
+    background: linear-gradient(to right, #000000, #000000);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 15px;
+    position: relative; /* Added position relative for absolute positioning of the gradient underline */
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ff3c8a;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.signin-button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff3c8a, #ff4e3e);
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+.custom-horizontal-line {
+    width: 1440.022px;
+    height: 8px;
+    background: #444;
+    border: none; /* Remove default border */
+}
